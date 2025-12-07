@@ -30,6 +30,112 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Float animation for image */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @media (max-width: 991px) {
+        .one-third.img {
+          animation: float 3s ease-in-out infinite;
+        }
+      }
+
+      /* Responsive layout for home section on small screens */
+      @media (max-width: 991px) {
+        .owl-carousel.home-slider .slider-item .slider-text {
+          display: flex !important;
+          flex-direction: column !important;
+          height: auto !important;
+        }
+
+        .owl-carousel.home-slider .slider-item .slider-text .one-third.img {
+          order: 1 !important;
+          position: relative !important;
+          width: 100% !important;
+          height: 400px !important;
+          margin-bottom: 20px !important;
+        }
+
+        .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+          order: 2 !important;
+          position: relative !important;
+          width: 100% !important;
+          padding: 20px !important;
+          top: auto !important;
+          left: auto !important;
+          right: auto !important;
+          bottom: auto !important;
+        }
+
+        .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+          position: relative !important;
+          transform: none !important;
+          -webkit-transform: none !important;
+          -ms-transform: none !important;
+        }
+
+        .owl-carousel.home-slider
+          .slider-item
+          .slider-text
+          .one-forth
+          .text
+          .subheading {
+          font-size: 12px !important;
+        }
+
+        .owl-carousel.home-slider
+          .slider-item
+          .slider-text
+          .one-forth
+          .text
+          h1 {
+          font-size: 28px !important;
+          line-height: 1.2 !important;
+        }
+
+        .owl-carousel.home-slider
+          .slider-item
+          .slider-text
+          .one-forth
+          .text
+          h2 {
+          font-size: 18px !important;
+        }
+
+        .owl-carousel.home-slider
+          .slider-item
+          .slider-text
+          .one-forth
+          .text
+          #typing-animation {
+          font-size: 16px !important;
+        }
+
+        .owl-carousel.home-slider
+          .slider-item
+          .slider-text
+          .one-forth
+          .text
+          .btn {
+          padding: 10px 20px !important;
+          font-size: 14px !important;
+        }
+
+        .owl-carousel.home-slider .slider-item .slider-text .one-forth .text p {
+          margin-top: 15px !important;
+        }
+      }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -52,7 +158,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="oi oi-menu"></span> Menu
+          <span class="oi oi-menu"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -95,13 +201,13 @@
               data-scrollax-parent="true"
             >
               <div
-                class="one-third js-fullheight order-md-last img"
+                class="one-third js-fullheight order-md-last order-1 img"
                 style="background-image: url(images/bg.png)"
               >
                 <div class="overlay"></div>
               </div>
               <div
-                class="one-forth d-flex align-items-center ftco-animate"
+                class="one-forth d-flex align-items-center ftco-animate order-2 order-md-first"
                 data-scrollax=" properties: { translateY: '70%' }"
               >
                 <div class="text">
@@ -218,43 +324,154 @@
                   justify-content: center;
                 "
               >
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=cpp" alt="C++" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=java" alt="Java" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=cs" alt="C#" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=py" alt="Python" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=dart" alt="Dart" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=html" alt="HTML" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=css" alt="CSS" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=js" alt="JavaScript" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=ts" alt="TypeScript" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=matlab" alt="MATLAB" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=dotnet" alt=".NET" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=flutter" alt="Flutter" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=tailwind" alt="Tailwind" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=react" alt="React" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=nextjs" alt="Next.js" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=bootstrap" alt="Bootstrap" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=nodejs" alt="Node.js" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=r" alt="R" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=oracle" alt="Oracle" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=mysql" alt="MySQL" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=sqlserver" alt="SQL Server" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=mongodb" alt="MongoDB" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=jupyter" alt="Jupyter" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=anaconda" alt="Anaconda" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=androidstudio" alt="Android Studio" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode" alt="VS Code" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=visualstudio" alt="Visual Studio" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=idea" alt="IntelliJ IDEA" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=eclipse" alt="Eclipse" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=codeblocks" alt="CodeBlocks" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=googlecolab" alt="Google Colab" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=cloudflare" alt="Cloudflare" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=desmos" alt="Desmos" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=git" alt="Git" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=gitbash" alt="Git Bash" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=github" alt="GitHub" />
-                <img src="https://go-skill-icons.vercel.app/api/icons?i=figma" alt="Figma" />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=cpp"
+                  alt="C++"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=java"
+                  alt="Java"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=cs"
+                  alt="C#"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=py"
+                  alt="Python"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=dart"
+                  alt="Dart"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=html"
+                  alt="HTML"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=css"
+                  alt="CSS"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=js"
+                  alt="JavaScript"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=ts"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=matlab"
+                  alt="MATLAB"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=dotnet"
+                  alt=".NET"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=flutter"
+                  alt="Flutter"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=tailwind"
+                  alt="Tailwind"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=react"
+                  alt="React"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=nextjs"
+                  alt="Next.js"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=bootstrap"
+                  alt="Bootstrap"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=nodejs"
+                  alt="Node.js"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=r"
+                  alt="R"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=oracle"
+                  alt="Oracle"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=mysql"
+                  alt="MySQL"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=sqlserver"
+                  alt="SQL Server"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=mongodb"
+                  alt="MongoDB"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=jupyter"
+                  alt="Jupyter"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=anaconda"
+                  alt="Anaconda"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=androidstudio"
+                  alt="Android Studio"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=vscode"
+                  alt="VS Code"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=visualstudio"
+                  alt="Visual Studio"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=idea"
+                  alt="IntelliJ IDEA"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=eclipse"
+                  alt="Eclipse"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=codeblocks"
+                  alt="CodeBlocks"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=googlecolab"
+                  alt="Google Colab"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=cloudflare"
+                  alt="Cloudflare"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=desmos"
+                  alt="Desmos"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=git"
+                  alt="Git"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=gitbash"
+                  alt="Git Bash"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=github"
+                  alt="GitHub"
+                />
+                <img
+                  src="https://go-skill-icons.vercel.app/api/icons?i=figma"
+                  alt="Figma"
+                />
               </div>
             </div>
           </div>
@@ -729,7 +946,7 @@
                     type="text"
                     name="name"
                     class="form-control"
-                    placeholder="Enter your name"
+                    placeholder="Name"
                     required
                   />
                 </div>
@@ -739,7 +956,7 @@
                     type="text"
                     name="subject"
                     class="form-control"
-                    placeholder="Enter subject"
+                    placeholder="Subject"
                     required
                   />
                 </div>
@@ -749,7 +966,7 @@
                     type="email"
                     name="email"
                     class="form-control"
-                    placeholder="Enter your email"
+                    placeholder="Email"
                     required
                   />
                 </div>
@@ -759,13 +976,13 @@
                     name="message"
                     class="form-control"
                     rows="4"
-                    placeholder="Write your message"
+                    placeholder="Message"
                     required
                   ></textarea>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                   <button type="submit" class="btn btn-primary py-3 px-5">
-                    Submit
+                    Send
                   </button>
                 </div>
               </div>
