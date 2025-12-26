@@ -4,7 +4,7 @@ $(document).ready(function () {
   const certificateFiles = [
     "ICASF.png",
     "QPAIN.png",
-    "ICTOB.PNG",
+    "ICTOB.png",
     "CISCO.png",
     "1.png",
     "2.png",
