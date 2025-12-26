@@ -30,112 +30,6 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <style>
-      /* Float animation for image */
-      @keyframes float {
-        0% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-        100% {
-          transform: translateY(0px);
-        }
-      }
-
-      @media (max-width: 991px) {
-        .one-third.img {
-          animation: float 3s ease-in-out infinite;
-        }
-      }
-
-      /* Responsive layout for home section on small screens */
-      @media (max-width: 991px) {
-        .owl-carousel.home-slider .slider-item .slider-text {
-          display: flex !important;
-          flex-direction: column !important;
-          height: auto !important;
-        }
-
-        .owl-carousel.home-slider .slider-item .slider-text .one-third.img {
-          order: 1 !important;
-          position: relative !important;
-          width: 100% !important;
-          height: 400px !important;
-          margin-bottom: 20px !important;
-        }
-
-        .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-          order: 2 !important;
-          position: relative !important;
-          width: 100% !important;
-          padding: 20px !important;
-          top: auto !important;
-          left: auto !important;
-          right: auto !important;
-          bottom: auto !important;
-        }
-
-        .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
-          position: relative !important;
-          transform: none !important;
-          -webkit-transform: none !important;
-          -ms-transform: none !important;
-        }
-
-        .owl-carousel.home-slider
-          .slider-item
-          .slider-text
-          .one-forth
-          .text
-          .subheading {
-          font-size: 12px !important;
-        }
-
-        .owl-carousel.home-slider
-          .slider-item
-          .slider-text
-          .one-forth
-          .text
-          h1 {
-          font-size: 28px !important;
-          line-height: 1.2 !important;
-        }
-
-        .owl-carousel.home-slider
-          .slider-item
-          .slider-text
-          .one-forth
-          .text
-          h2 {
-          font-size: 18px !important;
-        }
-
-        .owl-carousel.home-slider
-          .slider-item
-          .slider-text
-          .one-forth
-          .text
-          #typing-animation {
-          font-size: 16px !important;
-        }
-
-        .owl-carousel.home-slider
-          .slider-item
-          .slider-text
-          .one-forth
-          .text
-          .btn {
-          padding: 10px 20px !important;
-          font-size: 14px !important;
-        }
-
-        .owl-carousel.home-slider .slider-item .slider-text .one-forth .text p {
-          margin-top: 15px !important;
-        }
-      }
-    </style>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -258,16 +152,145 @@
                   <h2>An Undergraduate Researcher</h2>
                   <p>
                     <a
-                      href="https://www.hackerrank.com/profile/turjo007"
+                      href="#"
                       class="btn btn-primary py-3 px-4"
+                      data-toggle="modal"
+                      data-target="#certificatesModal"
                       >Certifications</a
                     >
                     <a
-                      href="https://github.com/tuRjoX?tab=repositories"
+                      href="#"
                       class="btn btn-white btn-outline-white py-3 px-4"
-                      >My works</a
-                    >
+                      data-toggle="modal"
+                      data-target="#cvModal"
+                      >My CV
+                    </a>
                   </p>
+                  <!-- Social Media Icons -->
+                  <div
+                    class="social-icons mt-4"
+                    style="display: flex; gap: 20px"
+                  >
+                    <a
+                      href="https://www.facebook.com/turjo.das.dip"
+                      target="_blank"
+                      title="Facebook"
+                    >
+                      <img
+                        src="images/icons/facebook.png"
+                        alt="Facebook"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/turjox/"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <img
+                        src="images/icons/instagram.png"
+                        alt="Instagram"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                    <a
+                      href="mailto:tdas41380@gmail.com"
+                      target="_blank"
+                      title="Email"
+                    >
+                      <img
+                        src="images/icons/gmail.png"
+                        alt="Email"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                    <a
+                      href="https://wa.me/+8801857048383"
+                      target="_blank"
+                      title="WhatsApp"
+                    >
+                      <img
+                        src="images/icons/whatsapp.png"
+                        alt="WhatsApp"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/t-u-r-j-o/"
+                      target="_blank"
+                      title="LinkedIn"
+                    >
+                      <img
+                        src="images/icons/linkedin.png"
+                        alt="LinkedIn"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                    <a
+                      href="https://www.researchgate.net/profile/Turjo-Dip"
+                      target="_blank"
+                      title="ResearchGate"
+                    >
+                      <img
+                        src="images/icons/researchgate.png"
+                        alt="ResearchGate"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/tuRjoX"
+                      target="_blank"
+                      title="GitHub"
+                    >
+                      <img
+                        src="images/icons/github.png"
+                        alt="GitHub"
+                        style="
+                          width: 40px;
+                          height: 40px;
+                          transition: transform 0.3s;
+                        "
+                        onmouseover="this.style.transform='scale(1.2)'"
+                        onmouseout="this.style.transform='scale(1)'"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -607,8 +630,10 @@
           <div class="col-md-6 text-center ftco-animate">
             <p>
               <a
-                href="https://aiubedu60714-my.sharepoint.com/:b:/g/personal/22-48558-3_student_aiub_edu/Ea0IbgHXiBtElNWLCk2is50Be1RnIL7kuDJtDD9_8X46gA?e=Ylq8l5"
+                href="#"
                 class="btn btn-primary py-4 px-5"
+                data-toggle="modal"
+                data-target="#cvModal"
                 >Download CV</a
               >
             </p>
@@ -633,7 +658,7 @@
               <a
                 href="https://github.com/tuRjoX/Borrower-Credit-Score-Classification-Using-Datasets-Analysis"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_8.jpg')"
+                style="background-image: url('images/projects/proj_8.jpg')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -656,7 +681,7 @@
               <a
                 href="https://github.com/tuRjoX/Savore-Restaurant-Management-System"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_7.png')"
+                style="background-image: url('images/projects/proj_7.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -677,7 +702,7 @@
               <a
                 href="https://github.com/tuRjoX/Interactive-2.5D-Cargo-Port-Simulation"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_6.png')"
+                style="background-image: url('images/projects/proj_6.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -699,7 +724,7 @@
               <a
                 href="https://github.com/tuRjoX/LifeLine-Blood-Bank"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_1.png')"
+                style="background-image: url('images/projects/proj_5.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -720,7 +745,7 @@
               <a
                 href="https://github.com/tuRjoX/Tripify-2.0-Travel-and-Tourism-Management-System"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_2.png')"
+                style="background-image: url('images/projects/proj_4.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -742,7 +767,7 @@
               <a
                 href="https://github.com/tuRjoX/Tripify-Database-Project"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_3.png')"
+                style="background-image: url('images/projects/proj_3.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -765,7 +790,7 @@
               <a
                 href="https://github.com/tuRjoX/Tripify-A-Travel-and-Tourisam-Management-Solution"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_4.png')"
+                style="background-image: url('images/projects/proj_2.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -787,7 +812,7 @@
               <a
                 href="https://github.com/tuRjoX/Flappy-Bird-Game"
                 class="block-20 zoom-effect"
-                style="background-image: url('images/proj_5.png')"
+                style="background-image: url('images/projects/proj_1.png')"
               ></a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading">
@@ -1009,6 +1034,162 @@
       </div>
     </footer>
 
+    <!-- Certificates Modal -->
+    <div
+      class="modal fade"
+      id="certificatesModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="certificatesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div
+          class="modal-content"
+          style="background-color: rgba(0, 0, 0, 0.9); border: none"
+        >
+          <div
+            class="modal-header"
+            style="
+              background-color: transparent;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              justify-content: center;
+              position: relative;
+            "
+          >
+            <h5
+              class="modal-title"
+              id="certificatesModalLabel"
+              style="color: #fff; margin: 0"
+            >
+              My Certifications
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="color: #fff; opacity: 1; position: absolute; right: 15px"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="padding: 0">
+            <div
+              id="certificatesCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="false"
+            >
+              <!-- Indicators -->
+              <ol class="carousel-indicators" id="certificateIndicators"></ol>
+
+              <!-- Slides -->
+              <div class="carousel-inner" id="certificateSlides"></div>
+
+              <!-- Controls -->
+              <a
+                class="carousel-control-prev"
+                href="#certificatesCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#certificatesCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV Modal -->
+    <div
+      class="modal fade"
+      id="cvModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cvModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div
+          class="modal-content"
+          style="
+            height: 90vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: none;
+          "
+        >
+          <div
+            class="modal-header"
+            style="
+              background-color: transparent;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              justify-content: center;
+              position: relative;
+            "
+          >
+            <h5
+              class="modal-title"
+              id="cvModalLabel"
+              style="color: #fff; margin: 0"
+            >
+              Curriculum Vitae
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="color: #fff; opacity: 1; position: absolute; right: 15px"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="overflow: hidden; padding: 0; flex: 1">
+            <iframe
+              src="https://aiubedu60714-my.sharepoint.com/personal/22-48558-3_student_aiub_edu/_layouts/15/embed.aspx?UniqueId=016e08ad-88d7-441b-94d5-8b0a4da2b39d"
+              style="width: 100%; height: 100%; border: 0"
+              scrolling="no"
+              allowfullscreen
+              title="CV"
+            ></iframe>
+          </div>
+          <div
+            class="modal-footer"
+            style="
+              background-color: transparent;
+              border-top: 1px solid rgba(255, 255, 255, 0.1);
+              justify-content: center;
+            "
+          >
+            <a
+              href="https://aiubedu60714-my.sharepoint.com/:b:/g/personal/22-48558-3_student_aiub_edu/Ea0IbgHXiBtElNWLCk2is50Be1RnIL7kuDJtDD9_8X46gA?e=Ylq8l5"
+              class="btn btn-primary"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Loader -->
     <div id="ftco-loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px">
@@ -1049,5 +1230,16 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/certificates.js"></script>
+    <script>
+      // Auto-collapse navbar on mobile when menu item is clicked
+      $(document).ready(function () {
+        $(".navbar-nav .nav-link").on("click", function () {
+          if ($(".navbar-toggler").is(":visible")) {
+            $(".navbar-collapse").collapse("hide");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
